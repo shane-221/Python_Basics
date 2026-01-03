@@ -1,0 +1,80 @@
+<mjml>
+  <mj-head>
+    <mj-title>Hello world</mj-title>
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:300,500"></mj-font>
+    <mj-attributes>
+      <mj-all font-family="Roboto, Helvetica, sans-serif"></mj-all>
+      <mj-text font-weight="300" font-size="16px" color="#616161" line-height="24px"></mj-text>
+      <mj-section padding="0px"></mj-section>
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-section padding="20px 0">
+      <mj-column width="60%">
+        <mj-text font-size="10px">Your Stock Price Tracker is here!</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column width="100%">
+        <mj-image href="https://recast.ai?ref=newsletter" src="https://static.mailjet.com/mjml-website/templates/recast-hero.png"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column width="100%">
+        <mj-text align="center">This newsletter tracks the price movements of yhe companies of interest.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column width="45%">
+        <mj-text align="center" font-weight="500" padding="0px" font-size="18px">ISSUE #18 - DECEMBER</mj-text>
+        <mj-divider border-width="2px" border-color="#616161"></mj-divider>
+        <mj-divider border-width="2px" border-color="#616161" width="45%"></mj-divider>
+      </mj-column>
+    </mj-section>
+    <mj-section padding-top="30px">
+      <mj-column width="100%">
+        <mj-text>
+          <p>Hello hello!</p>
+          <p> Don't panic. This is still the same newsletter, I'm still me. We just updated the design to make it sleeker and easier to read! </p>
+          <p>Without further ado, let's dive into the companies of interest!</p>
+        </mj-text>
+      </mj-column>
+      <mj-column width="100%">
+        <mj-divider border-width="1px" border-color="#E0E0E0"></mj-divider>
+      </mj-column>
+    </mj-section>
+
+<mj-section>
+  <mj-column width="75%">
+    <mj-text>
+      <mj-raw>
+        <!-- Inject your code here -->
+      </mj-raw>
+    </mj-text>
+  </mj-column>
+</mj-section>
+    <
+      <mj-column width="35%">
+        <mj-table>
+          <tr style="list-style: none;line-height:1">
+            <td> <a href="https://twitter.com/RecastAI">
+                <img width="25" src="https://static.mailjet.com/mjml-website/templates/recast-twitter.png" />
+              </a> </td>
+            <td> <a href="https://www.facebook.com/recastAI">
+                <img width="25" src="https://static.mailjet.com/mjml-website/templates/recast-facebook.png" />
+              </a> </td>
+            <td> <a href="https://medium.com/@RecastAI">
+                <img width="25" src="https://static.mailjet.com/mjml-website/templates/recast-medium.png" />
+              </a> </td>
+            <td> <a href="https://www.youtube.com/channel/UCA0UZlR8crpgwFiVaSTbVWw">
+                <img width="25" src="https://static.mailjet.com/mjml-website/templates/recast-youtube.png" />
+              </a> </td>
+            <td> <a href="https://plus.google.com/u/0/+RecastAi">
+                <img width="25" src="https://static.mailjet.com/mjml-website/templates/recast-google.png" />
+              </a> </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

@@ -8,15 +8,22 @@ class CompanyWebsiteSection:
     def structure (self):
         articles_html = ""
         for a in self.articles:
-            articles_html += f"<li>{a[0]} -- {a[1]} -- {a[2]}</li>\n"
+            articles_html += f"<mj-text>{a[0]} -- {a[1]} -- {a[2]}</mj-text>\n"
 
         return f"""
-            <div>
-                <h3>Company Stock ID: {self.stock}</h3>
-                <h3>Company Price Change: {self.price_change}</h3>
-                <h3>Articles</h3>
-                <ul style="margin-left: 20px;" >
+                <mj-section>
+      <mj-column width="75%">
+        <mj-text>
+          <h3 style="font-weight: bold; margin-top: 0; margin-bottom: 0"> <a href="https://blog.recast.ai/module-faster-shadow/" style="color: #3498DB; text-decoration: none">
+              {self.stock}
+            </a> </h3>
+          <p style="font-size: 14px"> Price change: {self.price_change}</p>
+        </mj-text>
+      </mj-column>
+      <mj-column width="25%">
+        <mj-text font-size="14px" line-height="1.4">
                     {articles_html}
-                </ul>
-            </div>
+   			</mj-text>
+      </mj-column>
+    </mj-section>
         """

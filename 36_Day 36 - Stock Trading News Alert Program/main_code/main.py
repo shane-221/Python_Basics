@@ -7,6 +7,9 @@ from dotenv import load_dotenv
 load_dotenv(dotenv_path="../Storage_files/.env")
 from Structures.company_website_section import *
 import datetime
+from Structures.send_email import *
+import mjml
+
 
 #---------------------------------------------------Constants ---------------------------------------------------------#
 STOCK = "IBM"
@@ -44,17 +47,29 @@ if price_data<-1 or price_data>1:
         exit()
     else:
         #--------------------------------------------------Step 5------------------------------------------------------#
+                        # Todo: Email html code being prepared
+
         # Todo:  If there is news present--- Then need the email needs to be sent to the individual.
         CompanyData = CompanyWebsiteSection(stock=STOCK, price_change=price_data, articles = news_data)
         #Todo: Gets the company data in the correct html format
         company_html = CompanyData.structure()
         # Todo: Places the data into the correct sectiopn of the txt file
             # Changes the code for the email file
-        with open("../Structures/email_format.html", mode="r") as file:
+        with open("../Structures/email_format.mjml", mode="r") as file:
             email_content  = file.read()
-            final_content = email_content.replace("<!-- Inject your code here -->", company_html)
-            print(final_content)
+            final_content_mjml = email_content.replace("<!-- Inject your code here -->", company_html)
+            html_output =mjml.mjml2html(final_content_mjml)
+
 
             # Write this new file back to the original file
         with open(f"../Output_Emails/output_format_{today}.html", mode="w") as file:
-            file.write(final_content)
+            file.write(html_output)
+
+
+                        # Email code being sent
+        email_request =Email(to_email=os.getenv("to_email"),
+                             from_email=os.getenv("from_email"),
+                             password=os.getenv("password"),
+                             host="SMTP.gmail.com"
+                             )
+        email_request.send_email()
