@@ -6,7 +6,7 @@
 import requests
 import os
 from dotenv import load_dotenv
-load_dotenv(dotenv_path="../Storage_files/.env")
+load_dotenv(dotenv_path="../Confidential_data_file/.env")
 
 # Todo: Constants
 API_KEY = os.getenv("price_api_key")
