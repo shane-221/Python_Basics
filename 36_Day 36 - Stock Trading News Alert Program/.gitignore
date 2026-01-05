@@ -1,1 +1,2 @@
-./Confidential_data_file/.env
+Confidential_data_file/.env
+*.env
