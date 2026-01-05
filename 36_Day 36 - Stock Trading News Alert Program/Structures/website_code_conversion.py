@@ -8,8 +8,11 @@ class CompanyWebsiteSection:
     def structure (self):
         articles_html = ""
         for a in self.articles:
-            articles_html += f"<div class='article'>•{a[0]} — {a[1]} — {a[2]}\n</div>"
-        print(articles_html)
+            articles_html += (f"<div class='article'>"
+                              f"<a href= {a[3]}>"
+                              f"•{a[0]} — {a[1]} — {a[2]}"
+                              f"</a></div>\n")
+        print(articles_html)                                                                                            # check 3 works
 
 
 
@@ -32,12 +35,8 @@ class CompanyWebsiteSection:
       <div class="heading">Articles:</div>
 
       <!-- Articles list -->
-      <div class="article">• Securityaffairs.com — IBM warns of critical API Connect bug enabling remote access — Pierluigi Paganini</div>
-      <div class="article">• BBC News — AI teachers and cybernetics - what could the world look like in 2050? — None</div>
-      <div class="article">• Pypi.org — iLibrary 0.0.12 — iLibrary@legner.beer</div>
-      <div class="article">• Hootsuite.com — Social media leadership skills enterprise teams needs in 2026 — Colleen Christison</div>
-      <div class="article">• Biztoc.com — Melinda French Gates got her start at Microsoft because an IBM hiring manager told her to turn down their job offer — fortune.com</div>
-    </div>
+      {articles_html}
+ </div>
         """
 
 
