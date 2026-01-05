@@ -23,15 +23,13 @@ class StockApi:
             if "Global Quote" in data:
                 close_price = float((data["Global Quote"]["08. previous close"]).strip())
                 current_price = float((data["Global Quote"]["05. price"]).strip())
-
-                # ------------------------------------------Step 3 ---------------------------------------------------------------#
                 percent_change = float(round((((current_price - close_price) / close_price) * 100), 4))
 
                 return percent_change
 
             else:
                 print("There is an error regarding the Price API")
-                print(f"Full response:{data["Error Message"].capitalize()} ")         # Could remove the dictionary
+                print(f"Full response:{data["Error Message"].capitalize()} ")
                 return None
         except Exception as e:
             print(f"There is an error with Price API:{e}")

@@ -12,7 +12,6 @@ class CompanyWebsiteSection:
                               f"<a href= {a[3]}>"
                               f"•{a[0]} — {a[1]} — {a[2]}"
                               f"</a></div>\n")
-        print(articles_html)                                                                                            # check 3 works
 
 
 

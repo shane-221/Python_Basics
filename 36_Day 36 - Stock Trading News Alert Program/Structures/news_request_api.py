@@ -33,7 +33,7 @@ class NewsApi:
                 return final_data
             elif data["totalResults"]==0:
                 print(f"No articles results found for the specified range of {days} days.")
-                return None
+                return final_data
             else:
                 "There is an issue with the articles API request"
                 return None

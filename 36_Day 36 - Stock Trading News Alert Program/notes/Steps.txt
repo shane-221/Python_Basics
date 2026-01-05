@@ -4,8 +4,8 @@ Steps to complete Trading News Alert Program
 
 2) Look at the market price at close- yesterday close data
 
-3) Analyse it: Check if the price has gone up or not + Check the percentage rise or fall
+3)  Use the change in Price to see if you need to request the news api
 
-4) Pull the news for the Extraordinary rise or fall of items( say 10% rise or fall)
+4) Pull the news for the Extraordinary rise or fall of items( say specified rise or fall)
 
 5) Send an email or SMS: What is the Big fluctuation and what was the news relevant to this.
