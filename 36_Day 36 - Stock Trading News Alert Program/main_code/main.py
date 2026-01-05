@@ -77,23 +77,23 @@ if price_data< -1*PRICE_CHANGE_CONDITION or price_data>PRICE_CHANGE_CONDITION:
         html_code = CompanyData.structure()
 
 
-        # Todo: Places the data into the correct section of the template html file.
-        with open("../Structures/email_format.html", mode="r") as file:
-            email_content  = file.read()
-            final_content_html = email_content.replace("<!-- Inject your code here -->", html_code)
-
-
-
-            # Todo: Once replaced- take this new file and place it into output file with date.
-        with open(f"../Output_Emails/output_format_{TODAY}.html", mode="w") as file:
-            file.write(final_content_html)
-
-        # Todo: send the email using the correct subject and parameters.
-
-                        # Email code being sent
-        email_request =Email(to_email=TO_EMAIL,
-                             from_email=FROM_EMAIL,
-                             password=PASSWORD,
-                             host=HOST
-                             )
-        email_request.send_email()
+        # # Todo: Places the data into the correct section of the template html file.
+        # with open("../Structures/email_format.html", mode="r") as file:
+        #     email_content  = file.read()
+        #     final_content_html = email_content.replace("<!-- Inject your code here -->", html_code)
+        #
+        #
+        #
+        #     # Todo: Once replaced- take this new file and place it into output file with date.
+        # with open(f"../Output_Emails/output_format_{TODAY}.html", mode="w") as file:
+        #     file.write(final_content_html)
+        #
+        # # Todo: send the email using the correct subject and parameters.
+        #
+        #                 # Email code being sent
+        # email_request =Email(to_email=TO_EMAIL,
+        #                      from_email=FROM_EMAIL,
+        #                      password=PASSWORD,
+        #                      host=HOST
+        #                      )
+        # email_request.send_email()

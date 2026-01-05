@@ -5,7 +5,7 @@ from email.message import EmailMessage
 
 
 def latest_output_file():
-    list_of_files = glob.glob('../output_emails/*')
+    list_of_files = glob.glob('../Output_Emails/*')
     latest_file = max(list_of_files, key=os.path.getmtime)      # From Stack overflow Pulls the file path of the most recent file
     if not latest_file:
         print(" There is a problem with the Output HTML file")
