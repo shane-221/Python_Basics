@@ -9,6 +9,7 @@ class StockApi:
 
     def price_request(self):
         # Todo: Creating the parameters withe the required arguments for data
+        global price_request
         price_parameters = {
             "apikey": self.api_key,
             "function": "GLOBAL_QUOTE",
@@ -28,13 +29,8 @@ class StockApi:
                 return percent_change
 
             else:
-                print("There is an error regarding the Price API")
                 print(f"Full response:{data["Error Message"].capitalize()} ")
                 return None
         except Exception as e:
-            print(f"There is an error with Price API:{e}")
-            return None
-
-        except Exception as e:
-            print( f"There was an error with Price api :{e}")
+            print(f"There is an error with Price API:{e}.")
             return None

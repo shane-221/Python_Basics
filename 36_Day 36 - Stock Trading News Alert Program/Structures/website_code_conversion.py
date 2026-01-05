@@ -1,3 +1,5 @@
+
+
 class CompanyWebsiteSection:
     def __init__(self, **kwargs):
         self.stock =kwargs ["stock"]
@@ -5,15 +7,14 @@ class CompanyWebsiteSection:
         self.articles = kwargs["articles"]
         self.article_number=-1
 
+
+
     def structure (self):
         articles_html = ""
         for a in self.articles:
             articles_html += (f"<div class='article'>"
                               f"<a href= {a[3]}>"
-                              f"•{a[0]} — {a[1]} — {a[2]}"
-                              f"</a></div>\n")
-
-
+                              f"•{a[0]} — {a[1]} — {a[2]}")
 
         return f"""
                 <div class="section">

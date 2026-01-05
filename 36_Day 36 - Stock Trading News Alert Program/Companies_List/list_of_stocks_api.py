@@ -1,5 +1,5 @@
 #======================================================================================================================#
-             # Current list of stocks being actively traded( See Read_notes_before_using_section for output)
+             # List of stocks being actively traded( See Read_notes_before_using_section for use cases)
 #======================================================================================================================#
 
 # Todo: Import statements
