@@ -36,7 +36,7 @@ class CompanyWebsiteSection:
       <!-- Articles list -->
       {articles_html}
  </div>
-        """
+       \n """
 
 
 
