@@ -11,11 +11,11 @@ from Structures.website_code_conversion import *
 import datetime
 from Structures.send_email import *
 import time
-
+import pandas as pd
 
 
 #======================================================================================================================#
-                                                # Constants
+                                        # Constants and variables
 #======================================================================================================================#
     # Todo: Price Constants
 PRICE_API_KEY= os.getenv("PRICE_API_KEY")
@@ -37,20 +37,25 @@ PASSWORD = os.getenv("PASSWORD")
 final_html_code_companies=""
 
 #======================================================================================================================#
-                #   Step 1 : Convert ENV File companies into a list
+                #   Step 1 : Convert ENV File companies into a dict with the correct stock_code: company_name
 #======================================================================================================================#
 companies = os.getenv("COMPANIES")
 companies_list =companies.split(",")
 print(companies_list)
 
+    #Todo: Get the company code: Company name combination
+df = pd.read_csv("../Companies_List/Companies_List.csv")
+companies_dict ={i:df[df["symbol"] == i]["name"].values[0] for i in companies_list}
 
-for company in companies_list:
+
+
+for stock_code in companies_dict:
     #================================================================================================================#
                     #   Step 2 ,3 , and 4: Work out the price change for each of the companies
     #================================================================================================================#
         # Todo : Work out the price change for the Companies
     time.sleep(2)
-    stock =StockApi(company, PRICE_API_KEY, PRICE_url)
+    stock =StockApi(stock_code, PRICE_API_KEY, PRICE_url)
     price_data = stock.price_request()
 
     print(price_data)
@@ -68,7 +73,7 @@ for company in companies_list:
     if price_data< -1*int(PRICE_CHANGE_CONDITION) or price_data>int(PRICE_CHANGE_CONDITION):
         # Todo: News email request
         time.sleep(2)
-        news = NewsApi(company, NEWS_API_KEY, NEWS_URL)
+        news = NewsApi(stock_code, NEWS_API_KEY, NEWS_URL)
         news_data = news.news_request()
         print(news_data)
 
@@ -78,39 +83,43 @@ for company in companies_list:
             exit()
 
         else:
-            # =======================================================================================================#
-                        # Step 6: Take the price change data and the news data and send it to email
-            # =======================================================================================================#
+            #=========================================================================================================#
+                      #  Step 6: Take the price change data and the news data and send it to email
+            #=========================================================================================================#
                             # Todo( Overall): Email html code being prepared
 
             # Todo:  When there is news to be presented-create a custom section for each of the companies.
-            CompanyData = CompanyWebsiteSection(stock=company, price_change=price_data, articles = news_data)
+            CompanyData = CompanyWebsiteSection(stock=stock_code,
+                                                price_change=price_data,
+                                                articles = news_data,
+                                                company_name= companies_dict[stock_code])
             html_code = CompanyData.structure()
             final_html_code_companies += html_code
-print(final_html_code_companies)
 
-# # =============================================================================================================#
-#                         # Step 7: Final embedding into an HTML output file and sending.
-# # =============================================================================================================#
-#
-#
-# # Todo: Places the data into the correct section of the template html file.
-# with open("../Structures/email_format.html", mode="r") as file:
-#     email_content  = file.read()
-#     final_content_html = email_content.replace("<!-- Inject your code here -->", final_html_code_companies)
-#
-#
-#
-# # Todo: Once replaced- take this new file and place it into output file with date.
-# with open(f"../Output_Emails/output_format_{TODAY}.html", mode="w") as file:
-#     file.write(final_content_html)
-#
-# # Todo: send the email using the correct subject and parameters.
-#
-#                 # Email code being sent
-# email_request =Email(to_email=TO_EMAIL,
-#                      from_email=FROM_EMAIL,
-#                      password=PASSWORD,
-#                      host=HOST
-#                      )
-# email_request.send_email()
+
+# =============================================================================================================#
+                        # Step 7: Final embedding into an HTML output file and sending.
+# =============================================================================================================#
+
+
+# Todo: Places the data into the correct section of the template html file.
+with open("../Structures/email_format.html", mode="r") as file:
+    email_content  = file.read()
+    final_content_html = email_content.replace("<!-- Inject your code here -->", final_html_code_companies)
+
+
+
+# Todo: Once replaced- take this new file and place it into output file with date. I have a bracket in the file
+## hence will need to use utf 8 instead of cp1252.
+with open(f"../Output_Emails/output_format_{TODAY}.html", mode="w", encoding="utf-8") as file:
+    file.write(final_content_html)
+
+# Todo: send the email using the correct subject and parameters.
+
+                # Email code being sent
+email_request =Email(to_email=TO_EMAIL,
+                     from_email=FROM_EMAIL,
+                     password=PASSWORD,
+                     host=HOST
+                     )
+email_request.send_email()

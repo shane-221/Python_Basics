@@ -21,8 +21,9 @@ price_parameters = {
 }
 
 price_request = requests.get(url=CSV_URL , params=price_parameters)
-data = price_request.text
+clean_data = price_request.content      # From Copilot
+
 
 # Todo: add as a csv file
 with open("Companies_list.csv", mode="w") as csv_file:
-    csv_file.write(data)
+    csv_file.write(clean_data)

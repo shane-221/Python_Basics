@@ -11,7 +11,7 @@ def latest_output_file():
         print(" There is a problem with the Output HTML file")
         return None
     else:
-        with open(latest_file) as file:
+        with open(latest_file, encoding="utf-8") as file:
             output = file.read()
             return output
 

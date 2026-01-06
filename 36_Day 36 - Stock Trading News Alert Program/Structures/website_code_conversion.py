@@ -1,3 +1,7 @@
+import pandas as pd
+
+
+
 
 
 class CompanyWebsiteSection:
@@ -5,8 +9,7 @@ class CompanyWebsiteSection:
         self.stock =kwargs ["stock"]
         self.price_change = kwargs["price_change"]
         self.articles = kwargs["articles"]
-        self.article_number=-1
-
+        self.company_name= kwargs["company_name"]
 
 
     def structure (self):
@@ -17,27 +20,28 @@ class CompanyWebsiteSection:
                               f"•{a[0]} — {a[1]} — {a[2]}")
 
         return f"""
-                <div class="section">
-      <!-- Stock name -->
-      <div class="stock-name">
-        <a href="https://blog.recast.ai/module-faster-shadow/" style="text-decoration:none; color:#3498DB;">
-          {self.stock}
-        </a>
-      </div>
-
-      <!-- Price change -->
-      <div class="price">Price change:{self.price_change}</div>
-
-      <!-- Divider -->
-      <div class="divider"></div>
-
-      <!-- Articles heading -->
-      <div class="heading">Articles:</div>
-
-      <!-- Articles list -->
-      {articles_html}
- </div>
-       \n """
+            <div class="divider"></div>
+            
+            <div class="section">
+            
+                <div class="stock-name">
+                    <a href="{"https://blog.recast.ai/module-faster-shadow"}" style="text-decoration:none; color:#3498DB;">
+                        {self.company_name} ({self.stock})
+                    </a>
+                </div>
+            
+                <div class="price">Price change: {self.price_change}</div>
+            
+                <div class="divider"></div>
+            
+                <div class="heading">Articles:</div>
+            
+                {articles_html}
+            
+            </div>
+            
+            <div class="divider"></div>
+"""
 
 
 
