@@ -1,2 +1,3 @@
 Confidential_data_file/.env
 *.env
+.venv
