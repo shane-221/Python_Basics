@@ -76,7 +76,3 @@
 - **Day 50–53:** Bot Projects (Not yet completed)  
 
 ---
-
-## 🧪 Intermediate: Web Development
-
-- **Day 54:** Introduction to Web Development with Flask  
