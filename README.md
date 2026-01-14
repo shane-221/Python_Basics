@@ -74,6 +74,6 @@
 - **Day 47:** Automated Price Tracker  
 - **Day 48:** Advanced Web Scraping – Selenium WebDriver  
 - **Day 49:** Workout Tracker Page  
-- **Day 50–53:** Bot Projects (Not yet completed)  
+- **Day 50–53:** Bot Projects
 
 ---
