@@ -63,12 +63,13 @@
 - **Day 42:** Intermediate HTML (Boilerplate)  
 - **Day 43:** Introduction to CSS  
 - **Day 44:** Intermediate CSS  
-- **Day 45:** Web Scraping (Basics using BeautifulSoup)  
+
 
 ---
 
 ## 🕷️ Intermediate: Web Scraping Projects & Selenium
 
+- **Day 45:** Web Scraping (Basics using BeautifulSoup)  
 - **Day 46:** Spotify Playlist App  
 - **Day 47:** Automated Price Tracker  
 - **Day 48:** Advanced Web Scraping – Selenium WebDriver  
