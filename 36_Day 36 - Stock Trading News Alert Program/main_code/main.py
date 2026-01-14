@@ -51,7 +51,7 @@ companies_dict ={i:df[df["symbol"] == i]["name"].values[0] for i in companies_li
 
 for stock_code in companies_dict:
     #================================================================================================================#
-                    #   Step 2 ,3 , and 4: Work out the price change for each of the companies
+                    #   Step 2: For each of the companies in the dictionary- send an API request to AlphaVantage
     #================================================================================================================#
         # Todo : Work out the price change for the Companies
     time.sleep(2)
@@ -66,7 +66,7 @@ for stock_code in companies_dict:
         exit()
 
     #================================================================================================================#
-            # Step 5: Checking if the news api needs to be sent depending on the price change condition
+            # Step 3: Checking if the news api needs to be sent depending on the price change condition
     #================================================================================================================#
 
         # Todo: Clarifying condition to send the email b
@@ -84,7 +84,8 @@ for stock_code in companies_dict:
 
         else:
             #=========================================================================================================#
-                      #  Step 6: Take the price change data and the news data and send it to email
+                      #  Step 5: Embed the combined HTML sections of companies into the template (email_format.html)
+                      ##  and saves it into the output directory with the date.
             #=========================================================================================================#
                             # Todo( Overall): Email html code being prepared
 
@@ -98,7 +99,7 @@ for stock_code in companies_dict:
 
 
 # =============================================================================================================#
-                        # Step 7: Final embedding into an HTML output file and sending.
+        # Step 6(send_email.py): Pulls the most recent file within the output file and sends it using classes
 # =============================================================================================================#
 
 

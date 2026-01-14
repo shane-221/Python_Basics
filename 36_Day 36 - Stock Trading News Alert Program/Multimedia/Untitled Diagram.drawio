@@ -1,0 +1,123 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.3.0">
+  <diagram name="Page-1" id="cmPGdEg_FQvtu18uTjUc">
+    <mxGraphModel dx="912" dy="1662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WZUP7k1nYKnwNaJf710S-20" edge="1" parent="1" source="WZUP7k1nYKnwNaJf710S-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="WZUP7k1nYKnwNaJf710S-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Imports Section&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-23" edge="1" parent="1" source="WZUP7k1nYKnwNaJf710S-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="WZUP7k1nYKnwNaJf710S-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Constants and Variables&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-3" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="250" y="200" as="sourcePoint" />
+            <mxPoint x="390" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Variables pulled from the .env fil" vertex="1">
+          <mxGeometry height="80" width="120" x="110" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-24" edge="1" parent="1" source="WZUP7k1nYKnwNaJf710S-5" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="459.6470588235295" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Step 1: Convert the companies into a dictionary where Ticker:Company Name&amp;nbsp;" vertex="1">
+          <mxGeometry height="80" width="190" x="365" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-25" edge="1" parent="1" source="WZUP7k1nYKnwNaJf710S-6" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="WZUP7k1nYKnwNaJf710S-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-26" edge="1" parent="1" source="WZUP7k1nYKnwNaJf710S-6" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="WZUP7k1nYKnwNaJf710S-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-6" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Step 2(stock_request_api&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;.py) : For each of the companies in the dictionary- send an API request to AlphaVantage and a possible value change is calculated.&amp;nbsp;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="160" width="160" x="380" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-7" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="110" y="390" as="sourcePoint" />
+            <mxPoint x="950" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Execution of a For Loop with the dictionary" vertex="1">
+          <mxGeometry height="60" width="120" x="980" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-34" edge="1" parent="1" source="WZUP7k1nYKnwNaJf710S-9" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="WZUP7k1nYKnwNaJf710S-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="All types of error outputs displayed in terminal using if, elif, and else statements&amp;nbsp;" vertex="1">
+          <mxGeometry height="90" width="150" x="210" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-27" edge="1" parent="1" source="WZUP7k1nYKnwNaJf710S-11" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="WZUP7k1nYKnwNaJf710S-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-28" edge="1" parent="1" source="WZUP7k1nYKnwNaJf710S-11" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="WZUP7k1nYKnwNaJf710S-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Step 3( News_request_api).py: Checks to see if&amp;nbsp; a request needs to be made to NEWS API. If the condition is met, request is sent, and the designated list of articles is ordered into a nested list.&amp;nbsp;" vertex="1">
+          <mxGeometry height="110" width="180" x="580" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-37" edge="1" parent="1" source="WZUP7k1nYKnwNaJf710S-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="WZUP7k1nYKnwNaJf710S-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-38" edge="1" parent="1" source="WZUP7k1nYKnwNaJf710S-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="WZUP7k1nYKnwNaJf710S-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="All types of error outputs displayed in terminal using if, elif, and else statements" vertex="1">
+          <mxGeometry height="80" width="130" x="490" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-13" edge="1" parent="1" source="WZUP7k1nYKnwNaJf710S-11" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" target="WZUP7k1nYKnwNaJf710S-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-29" edge="1" parent="1" source="WZUP7k1nYKnwNaJf710S-14" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="WZUP7k1nYKnwNaJf710S-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-14" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Step 4(website_code_conversion.py) : Takes the company price data and the news data and structures it into html code as a section.&amp;nbsp;" vertex="1">
+          <mxGeometry height="190" width="190" x="740" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-30" edge="1" parent="1" source="WZUP7k1nYKnwNaJf710S-15" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="WZUP7k1nYKnwNaJf710S-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-15" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Step 5: Embed the combined HTML sections of companies into the template (email_format.htrml) and saves it into the output directory with the date.&amp;nbsp;&amp;nbsp;" vertex="1">
+          <mxGeometry height="160" width="160" x="755" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="End of the for loop&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="990" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-17" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="110" y="1080" as="sourcePoint" />
+            <mxPoint x="980" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-18" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Step 6(send_email.py): Pulls the most recent file within the output file and sends it using classes&amp;nbsp;&amp;nbsp;" vertex="1">
+          <mxGeometry height="120" width="120" x="775" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-31" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="If the API Request does not return a 200 code. Then print out the error code.&amp;nbsp;" vertex="1">
+          <mxGeometry height="110" width="110" x="120" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-32" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="If a positive response is produced but there is an embedded error code- Then&amp;nbsp; prints out the error message itself.&amp;nbsp;&amp;nbsp;" vertex="1">
+          <mxGeometry height="110" width="110" x="315" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-33" edge="1" parent="1" source="WZUP7k1nYKnwNaJf710S-9" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.458;entryY=0.038;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" target="WZUP7k1nYKnwNaJf710S-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-35" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="If a positive response is produced but there is an embedded error code- Then&amp;nbsp; prints out the error message itself.&amp;nbsp;&amp;nbsp;" vertex="1">
+          <mxGeometry height="110" width="110" x="590" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="WZUP7k1nYKnwNaJf710S-36" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="If the API Request does not return a 200 code. Then print out the error code.&amp;nbsp;" vertex="1">
+          <mxGeometry height="110" width="110" x="420" y="930" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

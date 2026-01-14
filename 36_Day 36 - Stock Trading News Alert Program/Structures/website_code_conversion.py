@@ -10,6 +10,11 @@ class CompanyWebsiteSection:
         self.price_change = kwargs["price_change"]
         self.articles = kwargs["articles"]
         self.company_name= kwargs["company_name"]
+    #================================================================================================================#
+            # Step 4(website_code_conversion.py) : Takes the company price data,  the news data
+            ##  and structures it into html code as a section.
+    #================================================================================================================#
+
 
 
     def structure (self):

@@ -23,7 +23,7 @@ class Email:
         self.host =kwargs["host"]
 
     def send_email(self):
-        # Using the message Module:
+        # Using the message Module. Email module builds the email and smtp sends it.:
         msg = EmailMessage()
         msg.set_content(latest_output_file(), subtype="html")
 
