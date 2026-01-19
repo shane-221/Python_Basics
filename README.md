@@ -77,3 +77,24 @@
 - **Day 50–53:** Bot Projects
 
 ---
+
+## 🧰 Intermediate: Python Tooling,. Basic Web Serving & Professional Foundations
+
+- **Day 53:** Command Line Basics + Python Internals (__name__, __main__, functions as objects)
+- **Day 54:** Advanced Functions — Decorators, *args, **kwargs
+- **Day 56:** Minimal Flask Application (Routes + HTML Rendering)
+- **Day 70:** Git & Version Control Fundamentals
+- **Day 71:** GitHub, Remote Repositories & Collaboration
+
+## 📊 Data Analysis & Data Science Foundations( Pandas, NumPy, Seaborn, Plotly)
+
+- **Day 72:** Data Science Setup + Pandas Fundamentals
+- **Day 73:** Data Cleaning & Time Series Analysis
+- **Day 74:** Exploratory Data Analysis (EDA)
+- **Day 75:** Advanced Visualisation & Trend Analysis
+- **Day 76:** Data Cleaning, Aggregation & Interactive Visualisation (Plotly)
+- **Day 77:** NumPy Foundations
+- **Day 78:** Regression & Statistical Analysis
+- **Day 79:** Advanced Visualisation & Mapping
+- **Day 80:** Statistical Distributions & Significance Testing
+- **Day 81:** Summary & Applied Data Analysis
