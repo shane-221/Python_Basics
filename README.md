@@ -86,6 +86,7 @@
 - **Day 70:** Git & Version Control Fundamentals
 - **Day 71:** GitHub, Remote Repositories & Collaboration
 
+---
 ## 📊 Data Analysis & Data Science Foundations( Pandas, NumPy, Seaborn, Plotly)
 
 - **Day 72:** Data Science Setup + Pandas Fundamentals
