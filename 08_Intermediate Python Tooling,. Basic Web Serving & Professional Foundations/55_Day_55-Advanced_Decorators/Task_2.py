@@ -11,7 +11,7 @@ def bold(function):
         return f"<b>{output}</b><html>"
     return wrapper
 
-@app.route("/")
+@app.route("/qq")
 @bold
 def home():
     return "Hello World"
