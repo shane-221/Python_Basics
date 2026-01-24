@@ -82,7 +82,6 @@
 
 - **Day 54:** Command Line Basics + Python Internals (__name__, __main__, functions as objects)
 - **Day 55:** Advanced Functions — Decorators, *args, **kwargs
-- **Day 66:** Minimal Flask Application (Routes + HTML Rendering)
 - **Day 70:** Git & Version Control Fundamentals
 - **Day 71:** GitHub, Remote Repositories & Collaboration
 
