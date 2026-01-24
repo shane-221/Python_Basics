@@ -1,10 +1,10 @@
-Remote Git Workflow
+# Remote Git Workflow
 
-# What is a remote?
+## What is a remote?
 - A remote repository is hosted elsewhere (e.g., GitHub).
 - You push your local commits to this remote to share or back up your work.
 
-# Steps to connect and push to a remote
+## Steps to connect and push to a remote
 
 1. Add the remote repository:
 git remote add origin <repository-URL>
@@ -19,4 +19,7 @@ git push -u origin main
 
 # Notes:
 - 'main' is the default branch where primary commits are stored.
-- After setting upstream, you can use 'git push' and 'git pull' without specifying origin/main.
+- After setting upstream, you can use:
+  git push
+  git pull
+- These commands will automatically use the 'origin/main' tracking branch.git push' and 'git pull' without specifying origin/main.

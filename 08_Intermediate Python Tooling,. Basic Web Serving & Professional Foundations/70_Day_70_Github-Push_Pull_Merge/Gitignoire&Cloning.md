@@ -1,4 +1,4 @@
-Gitignore
+# Gitignore
 
 - A .gitignore file tells Git which files and folders to ignore.
 - Common things to ignore:
@@ -6,7 +6,7 @@ Gitignore
   - Data files (e.g., .csv, .xlsx)
   - System files (e.g., .DS_Store)
 
-Process:
+## Process:
 1. Create a .gitignore file:
    New-Item -Path .gitignore -ItemType File
 
