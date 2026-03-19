@@ -1,22 +1,14 @@
-from flask import  Flask
+from flask import Flask 
 
+app =Flask(__name__)
 
-app= Flask(__name__)
-
-
-# Can print the name as well:
-# print(__name__)
-    # Will print out __name__
-    # So if its name then it would be considered the main page __main __.
-    ## Hence, ti will execute the code.
-    ### print(random.__name__) name of the file that will be run
 
 @app.route("/")
 def hello_world():
     return "Hello World"
 
 
-# If the name is the same as the current file
-if __name__ =="__main__":
-    # Will only need to use standard controls from maon.py
-    app.run()
+### Need to point tot a file that you export as the server( into the terminal). In windows, this is: 
+
+## set FLASK_APP=Task_1.py
+## flask run 
