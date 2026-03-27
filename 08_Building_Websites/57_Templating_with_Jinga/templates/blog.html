@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+
+
+<body>
+    {% for each_posts in posts: %}
+        <h1>{{each_posts["title"]}}</h1>
+        <h2>{{each_posts["subtitle"]}}</h2>
+
+    {% endfor %}
+</body>
+
+</html>
