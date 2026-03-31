@@ -6,13 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+      <! --The style sheet for the css has the be after tge bootstrap elements to override the bootstrao one--> 
   <style>
-    /* TODO 4: Use flexbox to center the card in the vertical and horizontal center. */
+    .flex-container {
+      display:flex; 
+      justify-content:center; 
+      align-items:center; 
+      height:100vh;
+                    }
   </style>
 </head>
 
 <body>
-  <div class="flex-container" style="display:flex; justify-content:center; align-items:center; height:100vh;">
+  <div class="flex-container" >
       <div class="card" style="width: 18rem;">
         <img src="flower.jpg" class="card-img-top" alt="...">
          <div class="card-body">
