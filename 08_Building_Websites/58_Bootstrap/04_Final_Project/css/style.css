@@ -4,6 +4,11 @@
   animation: gradient-animation 18s ease infinite;
 }
 
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
